@@ -13,7 +13,7 @@ var app  = koa();
 app.keys = ['scret','keys'];
 const opts = {'maxAge' : 24*60*60*1000};
 app.use(session(app,opts));
-app.listen(2333);
+app.listen(80);
 var router = new Router({
     // prefix : '/view/:id'
 });
